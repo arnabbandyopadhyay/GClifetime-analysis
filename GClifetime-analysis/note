@@ -1,0 +1,25 @@
+Folder code contains C++ code and files required for the germinal centre (GC) simulations.
+
+Folder scripts contains R scripts used for the analysis of simulation results.
+
+
+
+Steps to run the GC simulations and analyze the results
+
+-> Specific settings need to be activated in cellthis.cpp and hyphasma.cpp (code -> src) for certain simulations. 
+These lines are marked with <GClifetime paper> along with the description
+
+
+-> Two command line arguments need to be provided for running the simulations
+
+1) Name of the parameter file in Parameters folder
+2) Name of the 2nd parameter file (Number of GCs and initiation times) in Par2files folder
+
+
+-> Result files of individual simulation repeats need to be collected in folders named 000, 001, ..., 00X
+
+-> To analyze the results, copy the R script and .txt files <from scripts folder> to the main folder containing the result folders (000, 001, ...), and run the script Plotall.R
+
+-> figures will be generated in a new folder called results
+
+
